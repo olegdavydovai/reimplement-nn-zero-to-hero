@@ -6,4 +6,5 @@ I am building a Value class without libraries, from scratch in Python. It accept
 - [Jupyter file](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/blob/main/lectures/lecture_0_autograd(micrograd).ipynb)
 
 ## Lecture 1: Trigram
-I'm implement a trigram character-level language model, a neural network model that takes 2 letters as input and generates the next letter. The dataset consists of people's names. I first rewind it randomly, and then  it: 1) on a train set to train the neural network 2) validation set to configure hyperparameters 3) test set to check performance at the end on data that the neural network has not seen.
+I'm implement a trigram character-level language model, i.e. a neural network model take two characters as an input to predict the 3rd one. The dataset consists of people's names. I first rewind it randomly, and then  it: 1) on a train set to train the neural network 2) validation set to configure hyperparameters 3) test set to check performance at the end on data that the neural network has not seen.
+- [Jupyter file](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/blob/main/lectures/lecture_1_trigram_bigram.ipynb)

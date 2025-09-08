@@ -5,6 +5,9 @@ I watch the playlist on YouTube [Andrej Karpathy](https://www.youtube.com/@Andre
 I am building a Value class without libraries, from scratch in Python. It accepts data, builds an object for them and tracks the operations that go through the entire code. It knows how any value was obtained, as a result of which operations, and stores this information. Then it builds a topographic graph that tells how the code was executed from beginning to end. Due to this, back propagation is performed using chain rule differentiation. Now we know the gradients of each parameter and I update them so that the loss function decreases according to the maximum likelihood estimation rules. The loss decreases using vanilla gradient descent. I am implementing a Neuron class that accepts inputs, initializes the weights for the inputs and biases. A Layer class that consists of several independent neurons that accept the same inputs, but different weights and biases for them. An MLP class that consists of several consecutive layers.
 - [Jupyter file](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/blob/main/lectures/lecture_0_autograd(micrograd).ipynb)
 
-## Lecture 1: Trigram
+## Lecture 1: Linear Trigram
 I'm implement a trigram character-level language model, i.e. a neural network model take two characters as an input to predict the 3rd one. The dataset consists of people's names. I first rewind it randomly, and then  it: 1) on a train set to train the neural network 2) validation set to configure hyperparameters 3) test set to check performance at the end on data that the neural network has not seen.
 - [Jupyter file](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/blob/main/lectures/lecture_1_trigram_bigram.ipynb)
+
+## Lecture 2: MLP N-gram
+- [Jupyter file](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/blob/main/lectures/lecture_2_MLP_fourgram.ipynb)

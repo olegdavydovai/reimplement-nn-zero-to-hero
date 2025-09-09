@@ -11,3 +11,6 @@ I'm implement a trigram character-level language model, i.e. a neural network mo
 
 ## Lecture 2: MLP N-gram
 - [Jupyter file 2](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/blob/main/lectures/lecture_2_MLP_fourgram.ipynb)
+
+## Lecture 3: Activations & Gradients
+Kaiming initialization

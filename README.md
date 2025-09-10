@@ -8,21 +8,18 @@ Exercises:
 - [Jupyter file 0](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/blob/main/lectures/lecture_0_autograd(micrograd).ipynb)
 
 ## Lecture 1: Linear Trigram
-
 Reimplement: I'm implement a trigram character-level language model, i.e. a neural network model take two characters as an input to predict the 3rd one. Training model, evaluation and sample new names from scratch. The dataset consists of people's names. I first rewind it randomly, and then  it: 1) 80% on a train set to train the neural network 2) 10% validation set to configure hyperparameters 3) 10% test set to check performance at the end on data that the neural network has not seen. Loss - the negative log likelihood for classification (cross_enropy). Regularization.
 
 Exercises:
 - [Jupyter file 1](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/blob/main/lectures/lecture_1_trigram_bigram.ipynb)
 
 ## Lecture 2: MLP N-gram
-
 Reimplement: I continue to improve the code from the previous lecture. I make a multilayer perceptron (MLP) character-level language model. I make the number of characters for a context be chosen in one place. I split the data into training, validation, and test. Learning rate and hyperparameters tuning, under/overfitting, size of network for some number of data. Lookup table of embeddings, minibatch, stochastic gradient descent, size of embeddings, efficient concatenation of embeddings. Learning rate decay. Linear projection S [from an paper by Bengio et al](https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf) which looks like a residual(skip) connection, but is not. Tracking logs, what degree of error we should expect, how to initialize logits so that the loss is reduced during initialization. A sample of the trained model. The structure of embeddings from the lookup table (it is definitely not random). MY TEST LOSS = 2.1304
 
 Exercises:
 - [Jupyter file 2](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/blob/main/lectures/lecture_2_MLP_fourgram.ipynb)
 
 ## Lecture 3: Activations & Gradients
-
 Reimplement: Set initial logits to approximately zero for good initial loss, Kaiming initialization. Variance, standart diviation and histograms of activations, running mean and std, gain and bias of batchnorm as parameters of network. Tracking and preventing dead neurons that do not receive gradients. Supporting neuron activations to have a standard deviation, tracking gradients so that they do not get small or large(vanishing and exploads gradients), so that the network can learn, simularity break(initialize weights to zero).
 
 Exercises:

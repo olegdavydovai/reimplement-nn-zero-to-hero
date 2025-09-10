@@ -14,4 +14,4 @@ I continue to improve the code from the previous lecture. I make a multilayer pe
 - [Jupyter file 2](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/blob/main/lectures/lecture_2_MLP_fourgram.ipynb)
 
 ## Lecture 3: Activations & Gradients
-Set initial logits to approximately zero for good initial loss, Kaiming initialization. Variance, standart diviation of activations
+Set initial logits to approximately zero for good initial loss, Kaiming initialization. Variance, standart diviation and histograms of activations, running mean and std, gain and bias of batchnorm as parameters of network. Tracking and preventing dead neurons that do not receive gradients. Supporting neuron activations to have a standard deviation, tracking gradients so that they do not get small or large(vanishing and exploads gradients), so that the network can learn, simularity break(initialize weights to zero).

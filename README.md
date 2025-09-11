@@ -3,7 +3,7 @@ I watch the playlist on YouTube [Andrej Karpathy](https://www.youtube.com/@Andre
 
 ## Table of Contents
 - [Lecture 0: Autograd, basics of neural networks, backpropagation](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/blob/main/README.md#lecture-0-autograd-basics-of-neural-networks-backpropogation)
-- [Lecture 1: Linear Trigram](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/blob/main/README.md#lecture-1-linear-trigram)
+- [Lecture 1: Linear Trigram](#lecture-1-linear-trigram)
 - [Lecture 2: MLP N-gram](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero?tab=readme-ov-file#lecture-2-mlp-n-gram)
 - [Lecture 3: Activations & Gradients](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/blob/main/README.md#lecture-3-activations--gradients)
 

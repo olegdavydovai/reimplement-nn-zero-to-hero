@@ -2,10 +2,10 @@
 I watch the playlist on YouTube [Andrej Karpathy](https://www.youtube.com/@AndrejKarpathy) - Neural Networks: Zero to hero. Then I recreate the code from the lectures from scratch and do exercises for the lectures. A course on neural networks that starts all the way at the basics. The Jupyter notebooks I build are then captured here inside the [lectures](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/tree/main/lectures) directory. More details about each completed project are written below ↓↓↓. [Here](https://github.com/karpathy/nn-zero-to-hero?tab=readme-ov-file) is the original GitHub of the course.
 
 ## Table of Contents
-- [Lecture 0: Autograd, basics of neural networks, backpropagation](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/blob/main/README.md#lecture-0-autograd-basics-of-neural-networks-backpropogation)
+- [Lecture 0: Autograd, basics of neural networks, backpropagation](#lecture-0-autograd-basics-of-neural-networks-backpropogation)
 - [Lecture 1: Linear Trigram](#lecture-1-linear-trigram)
-- [Lecture 2: MLP N-gram](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero?tab=readme-ov-file#lecture-2-mlp-n-gram)
-- [Lecture 3: Activations & Gradients](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/blob/main/README.md#lecture-3-activations--gradients)
+- [Lecture 2: MLP N-gram](#lecture-2-mlp-n-gram)
+- [Lecture 3: Activations & Gradients](#lecture-3-activations--gradients)
 
 ## Lecture 0: Autograd, basics of neural networks, backpropogation
 **Reimplement and study**: Derivative is core of backpropagation. I am building a Value, Neuron, Layer, MLP classes without libraries, from scratch in Python. Value accepts data, builds an object for them and tracks the operations that go through the entire code. It knows how any value was obtained, as a result of which operations, and stores this information. Then it builds a topographic graph. In this regard, backpropagation is performed using chain rule differentiation and the gradient of each parameter with respect to the loss function is obtained. I update them so that the loss function decreases according to the maximum likelihood estimation rules. Optimization is done using vanilla gradient descent. I am implementing a Neuron class that accepts inputs, initializes the weights and biases for the inputs. A Layer class that consists of several independent neurons that accept the same inputs, but different weights and biases for them. An MLP class that consists of several consecutive layers. Don't forget about zero grad. The nonlinearity I use is tanh, loss is MSE.

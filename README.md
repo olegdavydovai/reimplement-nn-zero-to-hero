@@ -15,6 +15,7 @@ I watch the playlist on YouTube [Andrej Karpathy](https://www.youtube.com/@Andre
 
 ## Lecture 1: Linear Trigram
 **MY TEST LOSS**: 2.3730
+
 **Reimplement and study**: I'm implement a bigram character-level language model, i.e. a neural network model take 1 characters as an input to predict the 2nd one. The dataset consists of people's names. I training model, evaluation it and sample new names from scratch. Intoducing pytorch: tensor, torch broadcasting, one_hot. Loss = the negative log likelihood for classification (cross_entropy) + regularization. Linear layer and matrix multiplication, logits + softmax.
 
 **Exercises**: Upgrade Bigram to Trigram (i.e. a neural network model take 2 characters as an input to predict the 3rd one). Split up the dataset randomly into 80% train set, 10% dev set, 10% test set. Train the bigram and trigram models only on the training set. Evaluate them on dev and test splits. Use the dev set to tune the strength of regularization (my best evaluation loss with lr_regularization = 0.0). Instead of using one_hot pull the row from Weights, use F.cross_entropy with pytorch.
@@ -22,6 +23,7 @@ I watch the playlist on YouTube [Andrej Karpathy](https://www.youtube.com/@Andre
 
 ## Lecture 2: MLP N-gram -
 **MY TEST LOSS**: 2.1304
+
 **Reimplement and study**: I continue to improve the code from the previous lecture. I first rewind it randomly, and then  it: 1) 80% on a train set to train the neural network 2) 10% validation set to configure hyperparameters 3) 10% test set to check performance at the end on data that the neural network has not seen. I make a multilayer perceptron (MLP) character-level language model. I make the number of characters for a context be chosen in one place. I split the data into training, validation, and test. Learning rate and hyperparameters tuning, under/overfitting, size of network for some number of data. Lookup table of embeddings, minibatch, stochastic gradient descent, size of embeddings, efficient concatenation of embeddings. Learning rate decay. Linear projection S [from an paper by Bengio et al](https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf) which looks like a residual(skip) connection, but is not. Tracking logs, what degree of error we should expect, how to initialize logits so that the loss is reduced during initialization. A sample of the trained model. The structure of embeddings from the lookup table (it is definitely not random).
 
 **Exercises**:
@@ -29,6 +31,7 @@ I watch the playlist on YouTube [Andrej Karpathy](https://www.youtube.com/@Andre
 
 ## Lecture 3: Activations & Gradients
 **MY TEST LOSS**:
+
 **Reimplement and study**: Set initial logits to approximately zero for good initial loss (reduce weights and biases in the last layer to almost 0). In general, we want the activations in the entire neural network to be approximately equal to the standard deviation (Kaiming initialization). Variance, std and histograms of activations. But for deep networks, it is difficult to control activations and normalization layers help with this. Batchnorm layer: running mean and std, gain and bias as parameters of network. In general, the rule of "layer order" works: 1) Linear layer with bias=False (or CNN) 2) Normalization layer 3) Nonlinearity. Tracking and preventing dead neurons that do not receive gradients, vanishing and exploads gradients, simularity break(don't initialize weights = 0). Introducing matplotlib.
 
 **Exercises**:

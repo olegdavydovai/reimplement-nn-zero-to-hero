@@ -26,7 +26,7 @@ I watch the playlist on YouTube [Andrej Karpathy](https://www.youtube.com/@Andre
 
 **Reimplement and study**: I implement a multilayer perceptron (MLP) character-level language model. I first suffle data randomly: 1) 80% on a train set to train the neural network 2) 10% validation set to configure hyperparameters 3) 10% test set to check performance at the end on data that the neural network has not seen. Context size = 3 (for predict 4th). Learning rate and hyperparameters tuning, under/overfitting, size of network for some number of data. Lookup table of embeddings, minibatch, SGD optimizer, size of embeddings, efficient concatenation of embeddings, learning rate decay. Tracking logs, what degree of error we should expect. A sample of the trained model. The structure of embeddings from the lookup table (it is definitely not random).
 
-**Exercises**: Linear projection S [from an paper by Bengio et al](https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf) which looks like a residual(skip) connection, but is not. How to initialize logits so that the loss is reduced during initialization
+**Exercises**: Linear projection S [from an paper by Bengio et al](https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf) which looks like a residual(skip) connection, but is not. How to initialize logits so that the loss is reduced during initialization. Changed hyperparameters: - . Not changed hyperparameters: - .
 - [Jupyter file 2](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/blob/main/lectures/lecture_2_MLP_fourgram.ipynb)
 
 ## Lecture 3: Activations & Gradients

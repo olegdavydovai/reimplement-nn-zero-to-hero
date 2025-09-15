@@ -22,7 +22,7 @@ I watch the playlist on YouTube [Andrej Karpathy](https://www.youtube.com/@Andre
 - [Jupyter file 1](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/blob/main/lectures/lecture_1_trigram_bigram.ipynb)
 
 ## Lecture 2: MLP N-gram
-**MY TEST LOSS**: 2.1304
+**MY TEST LOSS**: 2.1304 -
 
 **Reimplement and study**: I implement a multilayer perceptron (MLP) character-level language model. I first suffle data randomly: 1) 80% on a train set to train the neural network 2) 10% validation set to configure hyperparameters 3) 10% test set to check performance at the end on data that the neural network has not seen. Context size = 3 (for predict 4th). Learning rate and hyperparameters tuning, under/overfitting, size of network for some number of data. Lookup table of embeddings, minibatch, SGD optimizer, size of embeddings, efficient concatenation of embeddings, learning rate decay. Tracking logs, what degree of error we should expect. A sample of the trained model. The structure of embeddings from the lookup table (it is definitely not random).
 

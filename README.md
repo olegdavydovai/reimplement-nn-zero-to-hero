@@ -5,7 +5,7 @@ I watch the playlist on YouTube [Andrej Karpathy](https://www.youtube.com/@Andre
 - [Lecture 0: Autograd, basics of neural networks, backpropagation](#lecture-0-autograd-basics-of-neural-networks-backpropogation)
 - [Lecture 1: Linear Trigram](#lecture-1-linear-trigram)
 - [Lecture 2: MLP N-gram](#lecture-2-mlp-n-gram)
-- [Lecture 3: Activations & Gradients](#lecture-3-activations--gradients)
+- [Lecture 3: Activations & Gradients, Batchnorm1d & Linear](#lecture-3-activations--gradients-batchnorm1d--linear)
 
 ## Lecture 0: Autograd, basics of neural networks, backpropogation
 **Reimplement and study**: Derivative is core of backpropagation. I am building a Value, Neuron, Layer, MLP classes without libraries, from scratch in Python. Value accepts data, builds an object for them and tracks the operations that go through the entire code. It knows how any value was obtained, as a result of which operations, and stores this information. Then it builds a topographic graph. Backpropagation is performed using chain rule differentiation and the gradient of each parameter with respect to the loss function is obtained. I update them so that the loss function decreases according to the maximum likelihood estimation rules. Optimization is done using vanilla gradient descent. I am implementing a Neuron class that accepts inputs, initializes the weights and biases for the inputs. A Layer class that consists of several independent neurons that accept the same inputs, but different weights and biases for them. An MLP class that consists of several consecutive layers. Don't forget about zero grad. The nonlinearity I use is tanh, loss is MSE.
@@ -21,7 +21,7 @@ I watch the playlist on YouTube [Andrej Karpathy](https://www.youtube.com/@Andre
 **Exercises**: Upgrade Bigram to Trigram (i.e. a neural network model take 2 characters as an input to predict the 3rd one). Split up the dataset randomly into 80% train set, 10% dev set, 10% test set. Train the bigram and trigram models only on the training set. Evaluate them on dev and test splits. Use the dev set to tune the strength of regularization (my best evaluation loss with lr_regularization = 0.0). Instead of using one_hot pull the row from Weights, use F.cross_entropy with pytorch.
 - [Jupyter file 1](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/blob/main/lectures/lecture_1_trigram_bigram.ipynb)
 
-## Lecture 2: MLP N-gram -
+## Lecture 2: MLP N-gram
 **MY TEST LOSS**: 2.1304
 
 **Reimplement and study**: I implement a multilayer perceptron (MLP) character-level language model. I first suffle data randomly: 1) 80% on a train set to train the neural network 2) 10% validation set to configure hyperparameters 3) 10% test set to check performance at the end on data that the neural network has not seen. Context size = 3 (for predict 4th). Learning rate and hyperparameters tuning, under/overfitting, size of network for some number of data. Lookup table of embeddings, minibatch, SGD optimizer, size of embeddings, efficient concatenation of embeddings, learning rate decay. Tracking logs, what degree of error we should expect. A sample of the trained model. The structure of embeddings from the lookup table (it is definitely not random).

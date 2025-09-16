@@ -43,4 +43,4 @@ I watch the playlist on YouTube [Andrej Karpathy](https://www.youtube.com/@Andre
 
 **Exercises**:
 
-- [Jupyter file 4]
+- [Jupyter file 4] (None yet)

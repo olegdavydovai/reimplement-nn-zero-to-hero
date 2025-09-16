@@ -6,6 +6,7 @@ I watch the playlist on YouTube [Andrej Karpathy](https://www.youtube.com/@Andre
 - [Lecture 1: Linear Trigram](#lecture-1-linear-trigram)
 - [Lecture 2: MLP N-gram](#lecture-2-mlp-n-gram)
 - [Lecture 3: Activations & Gradients, Batchnorm1d & Linear](#lecture-3-activations--gradients-batchnorm1d--linear)
+- [Lecture 4: Backpropogation](#lecture-4-backpropogation)
 
 ## Lecture 0: Autograd, basics of neural networks, backpropogation
 **Reimplement and study**: Derivative is core of backpropagation. I am building a Value, Neuron, Layer, MLP classes without libraries, from scratch in Python. Value accepts data, builds an object for them and tracks the operations that go through the entire code. It knows how any value was obtained, as a result of which operations, and stores this information. Then it builds a topographic graph. Backpropagation is performed using chain rule differentiation and the gradient of each parameter with respect to the loss function is obtained. I update them so that the loss function decreases according to the maximum likelihood estimation rules. Optimization is done using vanilla gradient descent. I am implementing a Neuron class that accepts inputs, initializes the weights and biases for the inputs. A Layer class that consists of several independent neurons that accept the same inputs, but different weights and biases for them. An MLP class that consists of several consecutive layers. Don't forget about zero grad. The nonlinearity I use is tanh, loss is MSE.
@@ -36,3 +37,10 @@ I watch the playlist on YouTube [Andrej Karpathy](https://www.youtube.com/@Andre
 
 **Exercises**: I collapsed the parameters of Batchnorm1d to the previous Linear when evaluating + if all or all Linear parameters are set to zero, then only the bias (or beta) of the last layer is learned.
 - [Jupyter file 3](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/blob/main/lectures/lecture_3_Activations%20%26%20Gradients%2C%20Batchnorm1d%20%26%20Linear.ipynb)
+
+## Lecture 4: Backpropogation
+**Reimplement and study**: Manual backpropagation for tensors to understand it intuitively (via F.cross_entropy, Batchnorm1d, Linear).
+
+**Exercises**:
+
+- [Jupyter file 4]

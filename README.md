@@ -39,7 +39,7 @@ I watch the playlist on YouTube [Andrej Karpathy](https://www.youtube.com/@Andre
 - [Jupyter file 3](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/blob/main/lectures/lecture_3_Activations%20%26%20Gradients%2C%20Batchnorm1d%20%26%20Linear.ipynb)
 
 ## Lecture 4: Backpropogation
-**Reimplement and study**: Manual backpropagation for tensors to understand it intuitively (via F.cross_entropy, Batchnorm1d, Linear).
+**Reimplement and study**: Manual backpropagation for tensors to understand it intuitively (via F.cross_entropy, Batchnorm1d, Linear). Analytically derived the formula for F.cross_enropy and Batchnorm1d to calculate the gradients with a single formula.
 
 **Exercises**:
 

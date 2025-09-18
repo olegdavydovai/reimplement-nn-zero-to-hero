@@ -31,7 +31,7 @@ I watch the playlist on YouTube [Andrej Karpathy](https://www.youtube.com/@Andre
 - [Jupyter file 2](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/blob/main/lectures/lecture_2_MLP_fourgram.ipynb)
 
 ## Lecture 3: Activations & Gradients, Batchnorm1d & Linear
-**MY TEST LOSS**: 2.1057
+**MY TEST LOSS**: 2.1057 -
 
 **Reimplement and study**: Set initial logits to approximately zero for good initial loss (reduce weights and biases in the last layer to almost 0). In general, we want the activations in the entire neural network to be approximately equal to the standard deviation (Kaiming initialization). Variance, std and histograms of activations. But for deep networks, it is difficult to control activations and normalization layers help with this. Batchnorm layer: running mean and std, gain and bias as parameters of network. In general, the rule of "layer order" works: 1) Linear layer with bias=False (or CNN) 2) Normalization layer 3) Nonlinearity. Tracking and preventing dead neurons that do not receive gradients, vanishing and exploads gradients, simularity break(don't initialize weights = 0). Introducing matplotlib. I was figuring out the difference between uniform and normal distribution. And why torch.nn.Linear uses a formula that contradicts kaiming initialization and uses U(+-1/sqrt(fan_in)), which seemed to fall out of the sky when I was taught that activations should about N(0,1). Another way to tune learning rate it's check ratio: update/data = 10**-3. I initializing weights and biases of Linear layer 2 variant: 1) like torch.nn.Linear (uniform distribution) = U(-1/sqrt(fan_in), 1/sqrt(fan_in)) 2) like Andrej's video (normal distribution) = N (0, 1/sqrt(fan_in)).
 

@@ -41,8 +41,8 @@ I watch the playlist on YouTube [Andrej Karpathy](https://www.youtube.com/@Andre
 ## Lecture 4: Backpropagation
 **MY TEST LOSS**: 2.0899
 
-**Reimplement and study**: Manual backpropagation for tensors to understand it intuitively (via F.cross_entropy, Batchnorm1d, Linear). Analytically derived the formula for F.cross_enropy and Batchnorm1d to calculate the gradients with a single formula.
+**Reimplement and study**: Manual backpropagation for tensors to understand it intuitively (via F.cross_entropy, Batchnorm1d, Linear). Analytically derived the formula for F.cross_enropy and Batchnorm1d to calculate the gradients with a single formula. Training a neural network without using backward() but with a self-made backward pass.
 
-**Exercises**:
+**Exercises**: Output gradients manually without using .backward() and without the help of lecture.
 
-- [Jupyter file 4] (None yet)
+- [Jupyter file 4](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/blob/main/lectures/lecture_4_Backpropagation.ipynb)

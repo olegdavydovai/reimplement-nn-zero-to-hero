@@ -38,7 +38,9 @@ I watch the playlist on YouTube [Andrej Karpathy](https://www.youtube.com/@Andre
 **Exercises**: I collapsed the parameters of Batchnorm1d to the previous Linear when evaluating + if all or all Linear parameters are set to zero, then only the bias (or beta) of the last layer is learned.
 - [Jupyter file 3](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/blob/main/lectures/lecture_3_Activations%20%26%20Gradients%2C%20Batchnorm1d%20%26%20Linear.ipynb)
 
-## Lecture 4: Backpropogation
+## Lecture 4: Backpropagation
+**MY TEST LOSS**: 2.0899
+
 **Reimplement and study**: Manual backpropagation for tensors to understand it intuitively (via F.cross_entropy, Batchnorm1d, Linear). Analytically derived the formula for F.cross_enropy and Batchnorm1d to calculate the gradients with a single formula.
 
 **Exercises**:

@@ -39,10 +39,19 @@ I watch the playlist on YouTube [Andrej Karpathy](https://www.youtube.com/@Andre
 - [Jupyter file 3](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/blob/main/lectures/lecture_3_Activations%20%26%20Gradients%2C%20Batchnorm1d%20%26%20Linear.ipynb)
 
 ## Lecture 4: Backpropagation
-**MY TEST LOSS**: 2.0899 -
+**MY TEST LOSS**: 2.0899
 
-**Reimplement and study**: Manual backpropagation for tensors to understand it intuitively (via F.cross_entropy, Batchnorm1d, Linear). Analytically derived the formula for F.cross_enropy and Batchnorm1d to calculate the gradients with a single formula. Training a neural network without using backward() but with a self-made backward pass. Bessel's correction
+**Reimplement and study**: Manual backpropagation for tensors to understand it intuitively (via F.cross_entropy, Batchnorm1d, Linear). Analytically derived the formula for F.cross_enropy and Batchnorm1d to calculate the gradients with a single formula. Training a neural network without using torch backward() but with a self-made backward pass. Bessel's correction.
 
-**Exercises**: Output gradients manually without using .backward() and without the help of lecture.
+**Exercises**: Output gradients manually without using .backward() and analytically differentiation without the help of lecture.
 
 - [Jupyter file 4](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/blob/main/lectures/lecture_4_Backpropagation.ipynb)
+
+## Lecture 4: Wavenet, Seqential class
+**MY TEST LOSS**: 2.0899
+
+**Reimplement and study**: Implementation Seqential, Embedding, Flatten classes. Robust noise loss plot. Containers, nn.Module, submodules.
+
+**Exercises**: -
+
+- [Jupyter file 5] -

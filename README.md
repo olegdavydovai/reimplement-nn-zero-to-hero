@@ -50,8 +50,8 @@ I watch the playlist on YouTube [Andrej Karpathy](https://www.youtube.com/@Andre
 ## Lecture 4: Wavenet, Seqential class
 **MY TEST LOSS**: 2.0899
 
-**Reimplement and study**: Implementation Seqential, Embedding, Flatten classes. Robust noise loss plot. Containers, nn.Module, submodules.
+**Reimplement and study**: Implementation Wavenet without dilated causal convolutions, Seqential, Embedding, Flatten classes. Robust noise loss plot. Containers, nn.Module, submodules.
 
-**Exercises**: -
+**Exercises**: Beat 1.993 val loss
 
 - [Jupyter file 5] -

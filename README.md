@@ -47,7 +47,7 @@ I watch the playlist on YouTube [Andrej Karpathy](https://www.youtube.com/@Andre
 
 - [Jupyter file 4](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/blob/main/lectures/lecture_4_Backpropagation.ipynb)
 
-## Lecture 5: Wavenet, Seqential class
+## Lecture 5: Wavenet without Conv net, Seqential container
 **MY TEST LOSS**: 2.0899
 
 **Reimplement and study**: Implementation Wavenet without dilated causal convolutions, Seqential, Embedding, Flatten classes. Robust noise loss plot. Containers, nn.Module, submodules.

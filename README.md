@@ -55,3 +55,11 @@ I watch the playlist on YouTube [Andrej Karpathy](https://www.youtube.com/@Andre
 **Exercises**: Beat 1.993 val loss -
 
 - [Jupyter file 5](https://github.com/olegdavydovai/reimplement-nn-zero-to-hero/blob/main/lectures/lecture_5_Wavenet.ipynb)
+
+## Lecture 6: GPT
+**MY TEST LOSS**: -
+
+**Reimplement and study**:
+
+**Exercises**:
+

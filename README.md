@@ -59,7 +59,8 @@ I watch the playlist on YouTube [Andrej Karpathy](https://www.youtube.com/@Andre
 ## Lecture 6: GPT
 **MY TEST LOSS**: -
 
-**Reimplement and study**:
+**[Data]()**: 
+
+**Reimplement and study**: I build a Generative Pretrained Transformer (GPT). Tokenization, def data_loader so that the entire context history is visible. Introducing torch.nn: parent module (nn.Module), submodules, super().__init__(), order of succession, method __call__(), forward(),
 
 **Exercises**:
-

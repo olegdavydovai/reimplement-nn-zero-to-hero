@@ -61,6 +61,6 @@ I watch the playlist on YouTube [Andrej Karpathy](https://www.youtube.com/@Andre
 
 **[Data]()**: 
 
-**Reimplement and study**: I build a Generative Pretrained Transformer (GPT). Tokenization, def data_loader so that the entire context history is visible. Introducing torch.nn: parent module (nn.Module), submodules, super().__init__(), order of succession, method __call__(), forward(). Introducing VS Code: virtual enviroments. Introducing Google Colab: virtual machines.
+**Reimplement and study**: I build a Generative Pretrained Transformer (GPT). Tokenization, def data_loader so that the entire context history is visible. Introducing torch.nn: parent module (nn.Module), submodules, super().__init__(), order of succession, method __call__(), forward(). Introducing VS Code: virtual enviroments, interpreter, terminal, shells, SSH, package managers(conda and pip). Introducing Google Colab: virtual machines.
 
-**Exercises**:
+**Exercises**: 
